@@ -13,7 +13,7 @@
             "hash": "ca7de31b8385dbee6882d75831edd1f9ed04fb3e20fc29060fc74edffc0e86c6"
         }
     },
-    "pre_install": "Rename-Item 'jcode-windows-*.exe' 'jcode.exe'",
+    "pre_install": "Get-ChildItem 'jcode-windows-*.exe' | Rename-Item -NewName 'jcode.exe'",
     "bin": "jcode.exe",
     "checkver": {
         "github": "https://github.com/1jehuang/jcode"
